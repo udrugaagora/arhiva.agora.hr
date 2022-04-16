@@ -1,0 +1,903 @@
+/* ===============================================================
+      DUGA RESA FEST
+================================================================*/
+
+body, html {
+    height: 100%;
+}
+
+body * {
+    font-family: 'Merriweather Sans', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	-webkit-transition: all ease-in-out .3s;
+	-moz-transition: all ease-in-out .3s;
+	-ms-transition: all ease-in-out .3s;
+	-o-transition: all ease-in-out .3s;
+	transition: all ease-in-out .3s;
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+h2{
+    font-size: 1.9em;
+    padding: 1.5em;
+    text-align: center;
+    color: #737373;
+}
+
+h3{
+    font-size: 1.1em;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+section {
+    overflow: hidden;
+}
+/*---- main wrapper --------*/
+
+.main-wrapper {
+    height: 100%;
+}
+
+
+/*------- navigation ----------------------------------*/
+
+
+.top-bar {
+    border-bottom: 2px solid;
+    height: 3em;
+}
+
+[data-magellan-expedition], [data-magellan-expedition-clone] {
+    padding: 0;
+}
+
+.top-bar.expanded .title-area{
+    background: #5B008D;
+}
+
+.top-bar .toggle-topbar.menu-icon a span
+{
+    color: white;
+}
+
+.top-bar.expanded .toggle-topbar a span::after{
+    box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
+}
+
+.top-bar-section, .top-bar {
+    background: #d374e0;
+    background: -moz-linear-gradient(top, #d374e0 0%, #b625f9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d374e0), color-stop(100%,#b625f9));
+    background: -webkit-linear-gradient(top, #d374e0 0%,#b625f9 100%);
+    background: -o-linear-gradient(top, #d374e0 0%,#b625f9 100%);
+    background: -ms-linear-gradient(top, #d374e0 0%,#b625f9 100%);
+    background: linear-gradient(to bottom, #d374e0 0%,#b625f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d374e0', endColorstr='#b625f9',GradientType=0 );
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button),{
+    background: transparent;
+}
+
+/*center-no breakpoint*/
+.top-bar-section li:not(.has-form) a:not(.button):hover{
+    background: white;
+    color: purple;
+}
+
+section.top-bar-section ul li {
+    display: inline-block;
+    background: transparent;
+    float: none;
+}
+
+.top-bar-section ul li > a {
+    padding: 1em 0.5em;
+}
+
+ul.right {
+    text-align: center;
+}
+
+/*center-no breakpoint*/
+
+
+.fixed{
+    z-index: 500;
+}
+
+
+/* ------- showcase ----------------------------------*/
+
+
+.youtube-bg {
+    position: absolute;
+    top: 0;
+    /* z-index: -10; */
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    left: 0;
+}
+
+.youtube-bg iframe {
+    width: 100%;
+    top: -20.8%;
+    left: 0;
+    transform: translateY(-5%);
+/*
+    position: relative;
+*/
+}
+
+
+.showcase-image{
+    background-image: url("../img/dr_fest/slika(90).JPG");
+    height: 80%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.dark-matter {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 10;
+}
+
+
+img.logo {
+    position: relative;
+    /* top: 9em; */
+    /* right: 45%; */
+    width: 12%;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    z-index: 100;
+}
+
+.logo.logo-14 {
+	width: 25em;
+}
+
+
+.showcase-text {
+    position: absolute;
+    width: 85%;
+    right: 7%;
+    text-align: center;
+    bottom: 4em;
+    z-index: 100;
+}
+
+.showcase-text h1 {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px #000;
+}
+
+.intro-text-img-wrap img {
+    width: 6em;
+    float: right;
+}
+
+.intro-text-wrap {
+    padding-top: 2.5em;
+    padding-bottom: 3em;
+}
+
+h3.intro-text {
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+p.intro-subtext {
+    color: #909090;
+    font-size: .9em;
+	margin-bottom: 1em;
+}
+
+/* --------- Gallery --------------------------------------------------------*/
+
+#gallery ul li {
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-wrap {
+    padding: 0;
+}
+
+.set-of-3 {
+    padding: 0;
+    background: #d374e0;
+    background: -moz-linear-gradient(top, #d374e0 0%, #b625f9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d374e0), color-stop(100%,#b625f9));
+    background: -webkit-linear-gradient(top, #d374e0 0%,#b625f9 100%);
+    background: -o-linear-gradient(top, #d374e0 0%,#b625f9 100%);
+    background: -ms-linear-gradient(top, #d374e0 0%,#b625f9 100%);
+    background: linear-gradient(to bottom, #d374e0 0%,#b625f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d374e0', endColorstr='#b625f9',GradientType=0 );
+}
+
+.set-box {
+    padding: 0;
+}
+
+.set-content {
+    padding: 3em;
+    color: white;
+
+    /*
+        background: #53ad22; */
+    /* Old browsers *//*
+        background: -moz-linear-gradient(top,  #53ad22 1%, #b4dd2c 100%); */
+    /* FF3.6+ *//*
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#53ad22), color-stop(100%,#b4dd2c)); */
+    /* Chrome,Safari4+ *//*
+        background: -webkit-linear-gradient(top,  #53ad22 1%,#b4dd2c 100%); */
+    /* Chrome10+,Safari5.1+ *//*
+        background: -o-linear-gradient(top,  #53ad22 1%,#b4dd2c 100%); */
+    /* Opera 11.10+ *//*
+        background: -ms-linear-gradient(top,  #53ad22 1%,#b4dd2c 100%); */
+    /* IE10+ *//*
+        background: linear-gradient(to bottom,  #53ad22 1%,#b4dd2c 100%); */
+    /* W3C *//*
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53ad22', endColorstr='#b4dd2c',GradientType=0 ); */
+    /* IE6-9 */
+
+}
+
+.set-content p/*:first-child*/ {
+    padding-bottom: 1em;
+}
+
+.set-content a{
+	color: white;
+}
+
+.set-content a:hover{
+	color: lightgreen;
+}
+
+
+/*-------- Video ---------------------------------------------------------*/
+
+.video-gallery h5 {
+    color: #929292;
+}
+
+#video iframe {
+    width: 100%;
+    height: 30vh;
+    margin: .5em 0 2em;
+}
+
+.video-gallery {
+    margin-bottom: 4em;
+    margin-top: 1.5em;
+    overflow: hidden;
+}
+
+#video hr {
+    padding: 1em;
+}
+
+.nopad{
+    padding: 0;
+}
+
+p.video-intro-text {
+    padding: 0 1em 0;
+}
+
+/*--------- About ----------------------------------------------------------*/
+
+
+.about {
+	margin-top: 3em;
+}
+
+.about h2 {
+	color: white;
+}
+
+.about, .about-box {
+    padding: 0;
+}
+
+.about {
+    background: #d374e0; /* Old browsers */
+    background: -moz-linear-gradient(top,  #d374e0 0%, #b625f9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d374e0), color-stop(100%,#b625f9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #d374e0 0%,#b625f9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #d374e0 0%,#b625f9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #d374e0 0%,#b625f9 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #d374e0 0%,#b625f9 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d374e0', endColorstr='#b625f9',GradientType=0 ); /* IE6-9 */
+}
+
+.about-box {
+    text-align: center;
+    padding: 3em 3em 5em;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(128, 0, 128, 0.4);
+}
+
+.about-box p {
+    /* padding: 2em 4em 2em; */
+    /* margin-top: 1em; */
+    color: white;
+}
+
+#about svg{
+    height: 5em;
+    width: 5em;
+    margin-bottom: 2em;
+}
+
+#about svg .fil0{
+    fill: white;
+    fill-opacity: 1;
+}
+
+.about-box:last-child {border-right: 10px none}
+
+
+/* ---------- Schools ------------------------------------------------------*/
+
+#schools{
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#schools h4{
+    margin: 0 auto 1em;
+}
+
+#schools ul{
+    margin: 0 0 2em;
+    color: #929292;
+}
+
+#schools .school-list li{
+    margin-bottom: .5em;
+    text-transform: uppercase;
+}
+
+.sponsor-logos li{
+    display: inline-block;
+    margin: .5em 1em;
+}
+
+.sponsor-logos li img {
+    height: 5em;
+    width: 6em;
+}
+
+.sponsors{
+    margin: 1em 0 2em;
+}
+
+.sponsors p{
+    color: #929292;
+}
+
+.sponsors .fa-camera {
+	font-size: 3em;
+	margin-bottom: .2em;
+	color: lightgray;
+}
+
+/* ---------- Footer ------------------------------------------------------*/
+
+.footer-content{
+    padding: 2em;
+    background: #5A007E;
+    font-size: .7em;
+    color: #dadada;
+}
+
+.footer-content a{
+    color: #dadada;
+}
+
+.footer-content a:hover{
+    color: #bada55;
+}
+
+.footer-content-left{
+    text-align: left;
+}
+.footer-content-center{
+    text-align: center;
+}
+.footer-content-right{
+    text-align: right;
+}
+
+.footer-content-center p, .footer-content-right p{
+    font-size: 1em;
+}
+
+/*----- Rights -----*/
+
+.content-main {
+    margin-top: 2em;
+}
+
+.content-main h4, .content-main p {
+    margin: 1em 0;
+    color: #737373;
+}
+
+
+
+/*---- Cookies -----*/
+
+.kolacici{
+    padding-bottom: 2em;
+}
+
+.kolacici h1, .kolacici p {
+    margin: 1em 0;
+    color: #747474;
+}
+
+a#cookiescript_link {
+    color: transparent !important;
+}
+
+a#cookiescript_link {
+    color: transparent !important;
+}
+
+#cookiescript_injected {
+    background: #53ad22;
+    background: -moz-linear-gradient(top, #53ad22 1%, #b4dd2c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#53ad22), color-stop(100%,#b4dd2c));
+    background: -webkit-linear-gradient(top, #53ad22 1%,#b4dd2c 100%);
+    background: -o-linear-gradient(top, #53ad22 1%,#b4dd2c 100%);
+    background: -ms-linear-gradient(top, #53ad22 1%,#b4dd2c 100%);
+    background: linear-gradient(to bottom, #53ad22 1%,#b4dd2c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53ad22', endColorstr='#b4dd2c',GradientType=0 );
+}
+
+h4#cookiescript_header {
+    background: transparent!important;
+    color: white!important;
+}
+
+#cookiescript_wrapper {
+    color: white!important;
+}
+
+div#cookiescript_accept, div#cookiescript_readmore  {
+    margin-top: 1.5em!important;
+    background: white!important;
+    color: rgb(94, 178, 35)!important;
+    text-shadow: none !important;
+}
+
+div#cookiescript_readmore {
+    width: 6em;
+}
+
+div#cookiescript_accept:hover, div#cookiescript_readmore:hover{
+    background: rgb(52, 128, 6)!important;
+    color: white!important;
+}
+
+/*================= MEDIA QUERIES =======================*/
+
+
+@media  only screen and (max-width:  64.098em)
+{
+    .showcase-image{
+        height: 95%;
+    }
+
+    .youtube-bg{
+        display: none;
+    }
+
+}
+
+
+@media  only screen and (max-width: 40.063em)
+{
+    .intro-text-img-wrap {
+        text-align: center;
+        padding-bottom: 2em;
+    }
+
+    .intro-text-img-wrap img{
+        float: none;
+    }
+
+    .nopad{
+        padding: 0 0.9375rem;
+    }
+
+    .about-box{
+        border-right: none;
+        border-bottom: 1px solid rgba(128, 0, 128, 0.4);
+    }
+
+    .footer-content-left,  .footer-content-center,  .footer-content-right{
+        text-align: center;
+    }
+
+
+}
+
+
+@media  only screen and (min-width: 40.063em)
+{
+    /*li#uvod{
+        display: none;
+    }*/
+
+    .top-bar-section li:not(.has-form) a:not(.button){
+        background: transparent;
+    }
+
+}
+
+@media  only screen and (max-width: 35.000em)
+{
+    img.logo{
+        top: 6em;
+        width: 50%;
+    }
+
+    .showcase-text{
+        bottom: 2em;
+    }
+
+    .showcase-text h1{
+        font-size: .8em;
+    }
+
+    /*
+        .sponsor-logos li img {
+            height: 3em;
+            width: 3em;
+        }
+    */
+}
+
+@media  only screen and (max-width: 25.000em)
+{
+
+}
+
+@media  only screen and (max-width: 81.250em)
+{
+    .about-box p{
+        font-size: .8em;
+    }
+}
+
+
+@media  only screen and (min-width: 64.000em) and (max-width: 75.000em)
+{
+    .youtube-bg iframe{
+        transform: translateY(-20%);
+    }
+}
+
+
+@media  only screen and (min-width: 64.063em) and (max-width: 81.250em)
+{
+    .set-content {
+        padding: 1.5em;
+    }
+    .set-content p {
+        font-size: .7em;
+    }
+}
+
+@media  only screen and (min-width: 81.250em) and (max-width: 95.625em)
+{
+    .set-content {
+        padding: 1.5em;
+    }
+    .set-content p {
+        font-size: .9em;
+    }
+}
+
+@media  only screen and (max-width:73.750em)
+{
+
+}
+
+@media  only screen and (min-width:87.500em)
+{
+    img.logo{
+        top: 25%;
+        width: 15%;
+    }
+
+}
+
+@media  only screen and (max-width: 50em) and (min-width: 35em)
+{
+}
+
+@media  only screen and (max-width:87.500em)
+{
+    img.logo {
+        top: 22%;
+    }
+}
+
+
+/* :::::::::::::::::::::::  HOMEPAGE STYLE ::::::::::::::::::::::: */
+
+.wrapper {
+	position: relative;
+	height: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.block {
+	width: 25%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+.block-wrap {
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	transform: skew(0);
+	display: block;
+}
+
+
+.block.center {
+	width: 50%;
+}
+/*
+.left .block-wrap {
+	/!* We need our left block to expant its width to left side, not right*!/
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #BADA55;
+}
+.right .block-wrap {
+	background: #693;
+}
+.block-wrap:hover {
+	background: rgb(49, 95, 0);
+}
+*/
+
+.block-wrap-inner {
+	text-align: center;
+	transform: skew(0) translateX(0) translateY(-50%);
+	position: absolute;
+	top: 50%;
+	background: transparent;
+	color: #FFF;
+	width: 100%;
+}
+
+/*
+.left .block-wrap-inner {
+	right: 0;
+}
+
+.right .block-wrap-inner {
+	left: 31px;
+}
+*/
+
+.block-wrap:hover img {
+	margin-bottom: 1em;
+}
+
+a.block-wrap img {
+	max-width: 20em;
+}
+
+a.block-wrap p {
+	color: white;
+	font-weight: bold;
+}
+
+
+@media only screen and (max-width: 40em) {
+	a.block-wrap img {
+		max-width: 10em;
+	}
+}
+
+.left-block {
+	background-image: url("/img/dr_fest/slika(94).JPG");
+	background-size: cover;
+	background-position: center;
+}
+
+.right-block {
+	background-image: url("/img/drf_2015/drf_15(6).JPG");
+	background-size: cover;
+	background-position: center;
+}
+
+.center-block {
+	background-image: url("/img/2016/background.png");
+	background-size: cover;
+	background-position: center;
+}
+
+/* :::::::::::: MEDIA :::::::::::::: */
+
+.from-media h3 {
+	text-align: center;
+	color: grey;
+}
+
+.from-media dl {
+	display: inline-block;
+	padding-left: 2em;
+	margin: 2em 0 0;
+}
+
+.from-media dt {
+	color: gray;
+}
+
+.from-media dd a {
+	color: #CF69E4;
+}
+
+.from-media dd a:hover {
+	color: #CB11C1;
+}
+
+.from-media dd a:before {
+	content: "\f1ea";
+	font-family: FontAwesome;
+	display: inline-block;
+	color: lightgray;
+	margin-right: .5em
+}
+
+
+
+@media  only screen and (max-width: 85.375em)
+{
+	.block {
+		width: 25%;
+		height: 100%;
+	}
+	.block.center {
+		width: 100%;
+		height: 50%;
+	}
+}
+
+
+/* ::::::::::::::::: 2016 ::::::::::::::::::::::::: */
+
+
+#home-2016 .showcase-image{
+	      background-image: url("/img/2016/background_w_logo.png");
+	      height: 100%;
+	      position: relative;
+	      background-size: cover;
+	      background-position: center;
+	      text-align: center;
+		  min-height: 50em;
+      }
+
+.propositions {
+	width: 400px;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.propositions a {
+	display: block;
+	margin: 1em 2em;
+	padding: 15px;
+	border-radius: 4px;
+	background: white;
+	color: purple;
+	border: 1px solid transparent;
+}
+
+@media  only screen and (max-width: 30em)
+{
+	.propositions button {
+		margin: 80px 20px;
+	}
+}
+
+.propositions a:hover {
+	background: transparent;
+	border: 1px solid white;
+	color: white;
+}
+
+.propositions img {
+	height: 150px;
+}
+
+.subtext {
+	width: 80%;
+	margin: 0 auto 2em;
+	text-align: center;
+	color: white;
+}
+
+.entry-docs {
+	text-align: center;
+}
+
+.entry-docs a:hover {
+	color: white;
+	border: 1px solid transparent;
+	background: #d374e0;
+	background: -moz-linear-gradient(top, #d374e0 0%, #b625f9 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d374e0), color-stop(100%,#b625f9));
+	background: -webkit-linear-gradient(top, #d374e0 0%,#b625f9 100%);
+	background: -o-linear-gradient(top, #d374e0 0%,#b625f9 100%);
+	background: -ms-linear-gradient(top, #d374e0 0%,#b625f9 100%);
+	background: linear-gradient(to bottom, #d374e0 0%,#b625f9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d374e0', endColorstr='#b625f9',GradientType=0 );
+}
+
+.entry-docs a {
+	padding: 1em;
+	margin: 1em 1em 1em 0;
+	border: 1px solid #B82BF7;
+	border-radius: 4px;
+	color: #7500A9;
+	background: transparent;
+	transition: all ease-in-out .3s;
+	display: inline-block;
+}
+
+.organisation-team dl {
+	text-align: center;
+	margin-bottom: 3em;
+}
+
+@media only screen and (min-width: 85.375em) {
+	.contact-us {
+		font-size: 1.4em;
+	}
+}
